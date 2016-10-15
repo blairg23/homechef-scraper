@@ -3,6 +3,7 @@
 
 # Custom
 /data/
+creds.py
 
 ### Linux ###
 *~

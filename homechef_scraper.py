@@ -38,6 +38,8 @@ import wget
 # Misc:
 import uuid
 
+# My custom creds module
+from creds import credentials 
 
 def next_date(date_string=None, date_object=None):
 	'''
@@ -213,7 +215,7 @@ def write_json(input_dict=None, output_file='pdf_data.json'):
 
 
 if __name__ == '__main__':
-	auth = ['username', 'password']
+	auth = [credentials['username'], credentials['password']]
 	earliest_date = '17-mar-2014'
 	data_output_directory = 'data'
 	pdf_output_directory = os.path.join(data_output_directory, 'pdfs')
