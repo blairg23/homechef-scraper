@@ -1,0 +1,5 @@
+beautifulsoup4==4.5.1
+python-dateutil==2.5.3
+requests==2.11.1
+six==1.10.0
+uuid==1.30
