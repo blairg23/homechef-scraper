@@ -239,7 +239,7 @@ if __name__ == '__main__':
 		parsed_date = parser.parse(earliest_date)
 	formatted_date = format_date(parsed_date)
 	
-	while parsed_date < datetime.now():		
+	while parsed_date < (datetime.now() + relativedelta(days=+14)):
 		responses = perform_requests(
 										formatted_date=formatted_date,
 										auth=auth,
