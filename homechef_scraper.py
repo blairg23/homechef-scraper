@@ -39,7 +39,7 @@ import wget
 import uuid
 
 # My custom creds module
-from creds import credentials 
+from creds import credentials
 
 def next_date(date_string=None, date_object=None):
     '''
