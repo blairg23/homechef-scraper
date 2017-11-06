@@ -176,12 +176,12 @@ def get_responses(json_file='pdf_data.json'):
     If JSON file exists, returns dictionary containing contents.
     Otherwise, returns empty dictionary with data object.
     '''
+    responses = {}
     if os.path.exists(json_file):
         with open(json_file) as infile:
             responses = json.load(infile)
         print('[READING] JSON from {json_file}...\n'.format(json_file=json_file))
     else:
-        responses = {}
         responses['data'] = []
         print('[CREATING] Empty JSON object...\n')
 
